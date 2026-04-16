@@ -1,2 +1,20 @@
 # FakePinteresPy
-📸 Fake Pinterest Um clone simplificado do Pinterest desenvolvido para aplicar conceitos de desenvolvimento web backend e frontend. A aplicação permite que usuários criem contas, façam login e compartilhem imagens em um mural interativo. 🚀 Funcionalidades Sistema de Login: Cadastro de novos usuários e autenticação segura. Upload de Imagens: Usuários logados podem enviar fotos para a plataforma. Mural Dinâmico: Exibição das fotos postadas em um layout responsivo. Perfis de Usuário: Página personalizada mostrando as fotos de cada autor. 🛠️ Tecnologias Utilizadas O projeto foi construído utilizando as seguintes tecnologias: Python / Flask: Responsável por toda a lógica de rotas, banco de dados e autenticação. HTML5 & CSS3: Estrutura e estilização das páginas (foco em clean design). JavaScript: Pequenas interações no front-end para melhorar a experiência do usuário. SQLAlchemy: Para a manipulação do banco de dados de forma simples.Créditos: Projeto desenvolvido como parte do minicurso [Nome do Curso/Canal], com o objetivo de estudar a integração de Python/Flask com autenticação de usuários.
+
+📸 Fake Pinterest
+Um clone simplificado do Pinterest desenvolvido para aplicar conceitos de desenvolvimento web backend e frontend. A aplicação permite que usuários criem contas, façam login e compartilhem imagens em um mural interativo.
+
+🚀 Funcionalidades
+Sistema de Login: Cadastro de novos usuários e autenticação segura.
+Upload de Imagens: Usuários logados podem enviar fotos para a plataforma.
+Mural Dinâmico: Exibição das fotos postadas em um layout responsivo.
+Perfis de Usuário: Página personalizada mostrando as fotos de cada autor.
+
+🛠️ Tecnologias Utilizadas
+O projeto foi construído utilizando as seguintes tecnologias:
+Python / Flask: Responsável por toda a lógica de rotas, banco de dados e autenticação.
+HTML5 & CSS3: Estrutura e estilização das páginas (foco em clean design).
+JavaScript: Pequenas interações no front-end para melhorar a experiência do usuário.
+SQLAlchemy: Para a manipulação do banco de dados de forma simples.
+
+Créditos:
+Projeto desenvolvido como parte do minicurso @HashtagProgramacao, com o objetivo de estudar a integração de Python/Flask com autenticação de usuários.
