@@ -1,32 +1,44 @@
 {% extends "homepage.html" %}
 
 {% block titulo %}
-Perfil - {{ usuario }}
+Perfil - {{ usuario.username }}
 {% endblock %}
 
 {% block body %}
 <body>
-    <h1>Perfil do Usuário: {{ usuario.username }}</h1>
+    {% include "navbar.html" %}
 
-    
+    <div class="container">
     {% if form %}
-    <form method="POST" enctype="multipart/form-data">
-        {{ form.csrf_token }}
 
-        {{ form.foto }}
-        {{ form.botao_confirmacao }}
+        <form method="POST" enctype="multipart/form-data" class="bloco-add-img">
+            {{ form.csrf_token }}
+            <h2>Perfil - {{ usuario.username }}</h2>
 
-    </form>
+            <div class="bloco-input-botao">
+                <div class="bloco-arquivo">
+                    <h3>Enviar Nova Foto</h3>
+                    {{ form.foto(class="botao-arquivo") }}
+                </div>
+            </div>
+
+            {{ form.botao_confirmacao(class="botao-login") }}
+        </form>
+    {% else %}
+        <div class="bloco-add-img">
+            <h2>{{ usuario.username }} - Enviar foto</h2>
+        </div>
     {% endif %}
+    </div>
 
-    <img src="{{ url_for('static', filename='fotos_posts/default.png') }}" alt="">
 
-    {% for foto in usuario.fotos%}
-        <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" alt="">
+    <div class="conteudo">
+    {% for foto in usuario.fotos %}
+        <div class="bloco-imagem">
+            <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}"/>
+        </div>
     {% endfor %}
-
-
-    <a href="{{ url_for('logout') }}">Sair</a>
+    </div>
 
 </body>
 {% endblock %}
