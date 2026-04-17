@@ -11,7 +11,7 @@ app.config["UPLOAD_FOLDER"] = "static/fotos_posts"
 
 database = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
-login_maneger = LoginManager(app)
-login_maneger.login_view = "homepage"
+login_manager = LoginManager(app)
+login_manager.login_view = "homepage"
 
 from fakepinterest import routes
